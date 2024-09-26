@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Reddit Sans Condensed", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.body {
+    background-color: #84c6c6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.user-name {
+    margin-bottom: 0rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.message-container {
+    padding-top: 20px;
+    width: 75%;
+    margin: auto;
+    height: 500px;
+    overflow: auto;
+}
+
+.message {
+    width: 25%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+}
+
+.right {
+    background-color: hsl(185, 95%, 33%);
+    color: #fff;
+    float: right;
+    clear: both;
+}
+
+.left {
+    background-color: rgb(234, 234, 234);
+    float: left;
+    clear: both;
+}
+
+.center {
+    background-color: rgb(234, 234, 234);
+    float: center;
+    clear: both;
+}
+
+.send-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 75%;
+    padding-top: 70px;
+}
+
+#messageinput {
+    width: 90%;
+    border: 2px solid hsl(185, 95%, 33%);
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+.send-btn {
+    cursor: pointer;
+    height: 40px;
+    background-color: hsl(185, 95%, 33%);
+    color: #fff;
+    border-radius: 6px;
+    width: 8%;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 900px) {
+    .message-container {
+        width: 90%;
+    }
+
+    .message {
+        width: 50%;
+    }
+
+    .send-container {
+        width: 90%;
+    }
+
+    #messageinput {
+        width: 80%;
+    }
+
+    .send-btn {
+        width: 18%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .message-container {
+        width: 100%;
+    }
+
+    .message {
+        width: 80%;
+    }
+
+    .send-container {
+        width: 98%;
+    }
+
+    #messageinput {
+        width: 75%;
+    }
+
+    .send-btn {
+        width: 22%;
+    }
+}
